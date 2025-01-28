@@ -38,6 +38,8 @@ def setup_script() -> Tuple[ABIContract, ABIContract, ABIContract, ABIContract]:
         _add_eth_balance()
         _add_token_balance(usdc, weth)
 
+    return (usdc, weth, None, None)
+
 
 def moccasin_main():
     setup_script()

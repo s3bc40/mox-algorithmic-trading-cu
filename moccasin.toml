@@ -8,6 +8,8 @@ default_network_name = "eth-forked"
 [networks.contracts]
 weth = { abi = "abis/weth.json" }
 usdc = { abi = "abis/usdc.json" }
+aavev3_pool_address_provider = { abi = "abis/aavev3_pool_address_provider.json" }
+pool = { abi = "abis/pool.json" }
 
 [networks.eth-forked]
 fork = true
@@ -18,6 +20,7 @@ unsafe_password_file = "$ANVIL0_PASSWORD_FILE"
 [networks.eth-forked.contracts]
 usdc = { address = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48" }
 weth = { address = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2" }
+aavev3_pool_address_provider = { address = "0x2f39d218133AFaB8F2B819B1066c7E434Ad94E9e" }
 
 
 # You can view all configuration options at https://cyfrin.github.io/moccasin/all_moccasin_toml_parameters.html
