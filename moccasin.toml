@@ -2,6 +2,12 @@
 src = "src"
 out = "out"
 dot_env = ".env"
+save_abi_path = "abis"
+default_network_name = "eth-forked"
+
+[networks.contracts]
+weth = { abi = "abis/weth.json" }
+usdc = { abi = "abis/usdc.json" }
 
 [networks.eth-forked]
 fork = true
